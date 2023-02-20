@@ -6,7 +6,8 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 1 to add the data at the start"); // UC 2
         System.out.println("Enter 2 to add the data at the End"); // UC 3
-        System.out.println("Enter 3 to add the data at In Between ");// UC4
+        System.out.println("Enter 3 to add the data at In Between ");
+        System.out.println("Enter 4 to delete the data at first position");
         switch (scanner.nextInt()) {
 
             case 1:
@@ -18,7 +19,10 @@ public class Main {
             case 3:
                 Operation.insertInBetween();
                 break;
+            case 4:
+            	Operation.pop();
+            	break;
 	}
         scanner.close();
-	}    
+	}       
 }
